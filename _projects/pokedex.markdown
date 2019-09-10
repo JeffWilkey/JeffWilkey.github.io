@@ -6,6 +6,8 @@ categories:
 excerpt: A web application built on React utilizing the PokemonTCG API as a backend
   the Pokemon NPM package to fetch Pokemon names
 featured_image: "/uploads/FireShot%20Capture%20013%20-%20Pokedex%20-%20serene-harbor-16803.herokuapp.com.png"
+live_site_url: https://serene-harbor-16803.herokuapp.com
+github_repo_url: https://www.github.com/jeffwilkey/pokedex-react
 ---
 
 ![Pokedex Screenshot](/uploads/FireShot%20Capture%20013%20-%20Pokedex%20-%20serene-harbor-16803.herokuapp.com.png)
@@ -32,12 +34,12 @@ Overall there are 4 separate React components at work.
 `Pokedex.js` manages most of the application's state:
 
 ``` javascript
-    this.state = {
-      selected: null,
-      cards: [],
-      startIndex: Math.floor(Math.random() * Math.floor(options.length)),
-      selectedCardIndex: 0
-    };
+this.state = {
+  selected: null,
+  cards: [],
+  startIndex: Math.floor(Math.random() * Math.floor(options.length)),
+  selectedCardIndex: 0
+};
 ```
 
 `selected` stores the `name` value of the currently selected Pokemon and makes sure that an unnecessary API call isn't made if the Pokemon is re-selected.
