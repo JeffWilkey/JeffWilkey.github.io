@@ -43,6 +43,6 @@ baseurl:
 url: 
 twitter_username: jeffwilkey
 github_username: jeffwilkey
+work_availability: Available
 plugins:
 - jekyll-feed
-- jekyll-paginate
