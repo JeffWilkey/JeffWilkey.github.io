@@ -1,6 +1,6 @@
 ---
 title: Gorman Group
-date: 2019-09-07 00:00:00 -07:00
+date: 2018-01-31 23:00:00 -08:00
 categories:
 - Web Applications
 - Full Stack
@@ -11,6 +11,8 @@ tags:
 position: 2
 featured_image: "/uploads/gormangroup.png"
 ---
+
+![Gorman Group Screenshot](/uploads/gorman-group-hires.png)
 
 Our team at Future Foundry was brought on to create Gorman Group's internal website. Gorman Group is a recruiting firm which sources high-level executives from Brazil.
 
