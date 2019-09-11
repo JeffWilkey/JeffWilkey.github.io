@@ -22,9 +22,9 @@ layout: default
       <h2><a href="{{site.projects.first.url}}">{{ site.projects.first.title }}</a></h2>
       <p>{{ site.projects.first.hero }}</p>
       <div class="project-buttons">
-        <a class="project-button repo" href="{{site.projects.first.github_repo_url}}">GitHub Repo <i
+        <a class="project-button repo" href="{{site.projects.first.github_repo_url}}" target="_blank">GitHub Repo <i
             class="fab fa-github"></i></a>
-        <a class="project-button live" href="{{site.projects.first.live_site_url}}">View Demo <i
+        <a class="project-button live" href="{{site.projects.first.live_site_url}}" target="_blank">View Demo <i
             class="fas fa-globe"></i></a>
       </div>
       
@@ -43,10 +43,14 @@ layout: default
         </div>
         <div class="project-icon-buttons">
           <a class="project-icon-button" href="{{project.url}}"><i class="fas fa-pencil-ruler"></i></a>
-          <a class="project-icon-button" href="{{project.github_repo_url}}" target="_blank"><i
+          {% if project.github_repo_url %}
+            <a class="project-icon-button" href="{{project.github_repo_url}}" target="_blank"><i
               class="fab fa-github"></i></a>
-          <a class="project-icon-button" href="{{project.live_site_url}}" target="_blank"><i
+          {% endif %}
+          {% if project.live_site_url %}
+            <a class="project-icon-button" href="{{project.live_site_url}}" target="_blank"><i
               class="fas fa-globe"></i></a>
+          {% endif %}
         </div>
       </div>
 
